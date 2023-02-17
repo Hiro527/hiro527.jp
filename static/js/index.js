@@ -15,6 +15,12 @@ const showCookieConfig = async () => {
     return;
 };
 
+const copyEmailAddr = () => {
+    navigator.clipboard
+        .writeText('business@hiro527.jp')
+        .catch((e) => console.error(e));
+};
+
 window.onload = () => {
     // 初アクセス時の処理
     const firstAccess = localStorage.getItem('firstAccess');

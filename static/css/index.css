@@ -25,15 +25,68 @@ body {
     overflow: hidden;
     align-items: center;
     justify-content: center;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(255, 255, 255);
 }
 
 #contentHolder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 400px;
     height: 564px;
     box-shadow:
-        0 8px 10px 1px rgba(255, 255, 255, 0.14),
-        0 3px 14px 2px rgba(255, 255, 255, 0.12),
-        0 5px 5px -3px rgba(255, 255, 255, 0.2);
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: white;
+    border-radius: 10px;
+}
+
+#iconImage {
+    margin-top: 30px;
+    width: 175px;
+}
+
+#nameHolder {
+    font-size: 30pt;
+}
+
+#profileSplitter {
+    margin: 20px;
+    width: 70%;
+}
+
+#profileHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11pt;
+    color: rgba(0, 0, 0, 0.75);
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.material-icons-profile {
+    font-size: 15pt !important;
+    vertical-align: -4px;
+}
+
+#material-icons-holder {
+    text-align: center;
+    margin-right: 10px;
+}
+
+#profileText {
+    color: rgba(0, 0, 0, 0.75);
+    font-family: source-han-sans-japanese, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#copyEmailAddr:hover {
+    text-decoration: underline;
+    font-weight: 700;
 }

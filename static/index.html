@@ -16,6 +16,8 @@
                 h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +31,39 @@
         gtag('config', 'G-0HTVBVVGX2');
     </script>
     <script src="./js/index.js"></script>
-    <div id="contentHolder"></div>
+    <div id="contentHolder">
+        <div id="iconImageHolder">
+            <img id="iconImage" src="./assets/img/icon_opB_512.png">
+        </div>
+        <div id="nameHolder" class="heavy">
+            Hiro
+        </div>
+        <hr id="profileSplitter">
+        <div id="profileHolder">
+            <div id="material-icons-holder">
+                <span class="material-icons-outlined material-icons-profile">
+                    cake
+                </span><br>
+                <span class="material-icons-outlined material-icons-profile">
+                    place
+                </span><br>
+                <span class="material-icons-outlined material-icons-profile">
+                    translate
+                </span><br>
+                <span class="material-icons-outlined material-icons-profile">
+                    email
+                </span>
+            </div>
+            <div id="profileText">
+                2004/05/27<br>
+                Yokohama, Japan<br>
+                日本語 / English<br>
+                <span id="copyEmailAddr" onclick="copyEmailAddr();">Click to Copy</span>
+            </div>
+        </div>
+        <div id="buttonHolder">
+
+        </div>
 </body>
 
 </html>
