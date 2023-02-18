@@ -33,7 +33,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 400px;
-    height: 564px;
+    height: 662px;
     box-shadow:
         rgba(0, 0, 0, 0.25) 0px 54px 55px,
         rgba(0, 0, 0, 0.12) 0px -12px 30px,
@@ -87,8 +87,7 @@ body {
 }
 
 #copyEmailAddr:hover {
-    text-decoration: underline;
-    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 #buttonHolder {
@@ -98,9 +97,10 @@ body {
     flex-direction: column;
 }
 
-#websiteBtnHolder {
+.websiteBtnHolder {
+    width: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
 }
 
 .webLinkBtn {
@@ -112,21 +112,56 @@ body {
     margin: 5px;
     border-radius: 5px;
     border: 1px rgba(0, 0, 0, 0.75) solid;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.5);
     user-select: none;
     transition: all .25s;
 }
 
 .webLinkBtn:hover {
     border: 1px rgba(0, 0, 0, 0.5) solid;
-    box-shadow:
-        rgba(0, 0, 0, 0.25) 0px 54px 55px,
-        rgba(0, 0, 0, 0.12) 0px -12px 30px,
-        rgba(0, 0, 0, 0.12) 0px 4px 6px,
-        rgba(0, 0, 0, 0.17) 0px 12px 13px,
-        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.webLinkBtn:active {
+    box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
 .material-icons-weblink {
     font-size: 17.5pt !important;
     vertical-align: -5px;
+}
+
+.snsLinkBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 30px;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 300;
+    margin: 5px;
+    border: 1px rgba(0, 0, 0, 0.75) solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: all .25s;
+}
+
+.snsLinkBtn:hover {
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.snsLinkBtn:active {
+    box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.snsLinkBtn div {
+    margin-top: 5px;
+}
+
+.snsImg {
+    height: 15pt;
 }
