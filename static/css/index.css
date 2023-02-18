@@ -90,3 +90,43 @@ body {
     text-decoration: underline;
     font-weight: 700;
 }
+
+#buttonHolder {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#websiteBtnHolder {
+    display: flex;
+    align-items: center;
+}
+
+.webLinkBtn {
+    width: 130px;
+    color: rgba(0, 0, 0, 0.75);
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 300;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px rgba(0, 0, 0, 0.75) solid;
+    user-select: none;
+    transition: all .25s;
+}
+
+.webLinkBtn:hover {
+    border: 1px rgba(0, 0, 0, 0.5) solid;
+    box-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.material-icons-weblink {
+    font-size: 17.5pt !important;
+    vertical-align: -5px;
+}
