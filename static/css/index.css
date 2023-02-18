@@ -41,7 +41,7 @@ body {
         rgba(0, 0, 0, 0.17) 0px 12px 13px,
         rgba(0, 0, 0, 0.09) 0px -3px 5px;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 #iconImage {
@@ -53,7 +53,7 @@ body {
     font-size: 30pt;
 }
 
-#profileSplitter {
+.profileSplitter {
     margin: 20px;
     width: 70%;
 }
@@ -110,11 +110,11 @@ body {
     font-size: 12pt;
     font-weight: 300;
     margin: 5px;
-    border-radius: 5px;
+    border-radius: 2.5px;
     border: 1px rgba(0, 0, 0, 0.75) solid;
     box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.5);
     user-select: none;
-    transition: all .25s;
+    transition: all .3s;
 }
 
 .webLinkBtn:hover {
@@ -135,7 +135,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60px;
+    width: 58px;
     height: 30px;
     color: rgba(0, 0, 0, 0.75);
     text-align: center;
@@ -143,10 +143,10 @@ body {
     font-weight: 300;
     margin: 5px;
     border: 1px rgba(0, 0, 0, 0.75) solid;
-    border-radius: 5px;
+    border-radius: 2.5px;
     box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.5);
     user-select: none;
-    transition: all .25s;
+    transition: all .3s;
 }
 
 .snsLinkBtn:hover {
@@ -164,4 +164,9 @@ body {
 
 .snsImg {
     height: 15pt;
+}
+
+#copyright {
+    margin-top: 30px;
+    font-weight: 20;
 }
