@@ -5,17 +5,17 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "chrome",
-            "request": "launch",
-            "name": "Next.js: Client",
-            "url": "http://localhost:3000",
-        },
-        {
             "type": "node-terminal",
             "request": "launch",
             "name": "Next.js: Server",
             "command": "npm run dev",
             "preLaunchTask": "prelaunch"
         },
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Next.js: Client",
+            "url": "http://localhost:3000"
+        }
     ]
 }
